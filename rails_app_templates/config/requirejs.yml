@@ -1,0 +1,21 @@
+paths:
+  jquery: 'jquery'
+  bootstrap: 'bootstrap.min'
+  'bootstrap-tagsinput': 'bootstrap-tagsinput'
+  underscore: 'lodash.underscore'
+  backbone: 'backbone'
+  'backbone-modelbinder': 'backbone-modelbinder.min'
+  'backbone-validation': 'backbone-validation'
+  chaplin: 'chaplin'
+  i18n: 'i18n'
+shim:
+  'backbone':
+    deps: ['underscore', 'jquery']
+    exports: 'Backbone'
+  'backbone-modelbinder':
+    deps: ['backbone']
+    exports: 'Backbone.ModelBinder'
+  'bootstrap':
+    deps: ['jquery']
+  'i18n':
+    exports: 'I18n'
